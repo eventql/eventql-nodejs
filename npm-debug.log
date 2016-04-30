@@ -1,0 +1,105 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.1.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   './' ]
+2 info using npm@3.3.12
+3 info using node@v5.1.0
+4 verbose publish [ './' ]
+5 silly cache add args [ './', null ]
+6 verbose cache add spec ./
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: './',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: './',
+7 silly cache add   spec: '/Users/paul/eventql-nodejs',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/paul/.npm/eventql/0.0.1/package.tgz not in flight; packing
+9 info lifecycle eventql@0.0.1~prepublish: eventql@0.0.1
+10 silly lifecycle eventql@0.0.1~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/paul/.npm/eventql/0.0.1/package.tgz',
+11 verbose tar pack   '/Users/paul/eventql-nodejs' ]
+12 verbose tarball /Users/paul/.npm/eventql/0.0.1/package.tgz
+13 verbose folder /Users/paul/eventql-nodejs
+14 verbose addLocalTarball adding from inside cache /Users/paul/.npm/eventql/0.0.1/package.tgz
+15 silly cache afterAdd eventql@0.0.1
+16 verbose afterAdd /Users/paul/.npm/eventql/0.0.1/package/package.json not in flight; writing
+17 verbose afterAdd /Users/paul/.npm/eventql/0.0.1/package/package.json written
+18 silly publish { name: 'eventql',
+18 silly publish   version: '0.0.1',
+18 silly publish   description: 'EventQL node.js driver',
+18 silly publish   author: { name: 'EventQL Authors', email: 'opensource@eventql.io' },
+18 silly publish   contributors:
+18 silly publish    [ { name: 'Laura Schlimmer', email: 'laura@eventql.io' },
+18 silly publish      { name: 'Paul Asmuth', email: 'paul@asmuth.com' } ],
+18 silly publish   main: 'lib/eventql.js',
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/eventql/eventql-nodejs.org.git' },
+18 silly publish   bugs: { url: 'https://github.com/eventql/eventql-nodejs/issues' },
+18 silly publish   keywords: [ 'eventql' ],
+18 silly publish   dependencies: {},
+18 silly publish   devDependencies: {},
+18 silly publish   preferGlobal: true,
+18 silly publish   private: false,
+18 silly publish   subdomain: 'eventql',
+18 silly publish   license: 'MIT',
+18 silly publish   gitHead: '9cadb655980080c64037f1b9d09c0888e01c72c5',
+18 silly publish   readme: 'ERROR: No README data found!',
+18 silly publish   homepage: 'https://github.com/eventql/eventql-nodejs.org#readme',
+18 silly publish   _id: 'eventql@0.0.1',
+18 silly publish   scripts: {},
+18 silly publish   _shasum: 'f29e9c43378ab8b18da64aa67693338047bbf224',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name eventql
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/eventql
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/paul/.npm/eventql/0.0.1/package.tgz
+26 verbose request uri https://registry.npmjs.org/eventql
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 11:27:54 PM
+29 verbose request using bearer token for auth
+30 verbose request id 371f1cf94ad0b63b
+31 http request PUT https://registry.npmjs.org/eventql
+32 http 403 https://registry.npmjs.org/eventql
+33 verbose headers { 'content-type': 'application/json',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   'content-length': '95',
+33 verbose headers   'accept-ranges': 'bytes',
+33 verbose headers   date: 'Sat, 30 Apr 2016 21:27:56 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-ams4126-AMS',
+33 verbose headers   'x-cache': 'MISS',
+33 verbose headers   'x-cache-hits': '0',
+33 verbose headers   'x-timer': 'S1462051675.460563,VS0,VE1003',
+33 verbose headers   vary: 'Accept-Encoding' }
+34 verbose request invalidating /Users/paul/.npm/registry.npmjs.org/eventql on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: "You cannot publish over the previously published version 0.0.1." : eventql
+36 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+36 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+36 verbose stack     at emitTwo (events.js:87:13)
+36 verbose stack     at Request.emit (events.js:172:7)
+36 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+36 verbose stack     at emitOne (events.js:82:20)
+36 verbose stack     at Request.emit (events.js:169:7)
+36 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+37 verbose statusCode 403
+38 verbose pkgid eventql
+39 verbose cwd /Users/paul/eventql-nodejs
+40 error Darwin 15.0.0
+41 error argv "/usr/local/Cellar/node/5.1.0/bin/node" "/usr/local/bin/npm" "publish" "./"
+42 error node v5.1.0
+43 error npm  v3.3.12
+44 error code E403
+45 error "You cannot publish over the previously published version 0.0.1." : eventql
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]

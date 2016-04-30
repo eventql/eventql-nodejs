@@ -1,0 +1,33 @@
+{
+  "name": "eventql",
+  "version": "0.0.1",
+  "description": "EventQL node.js driver",
+  "author": "EventQL Authors <opensource@eventql.io>",
+  "contributors": [
+    {
+      "name": "Laura Schlimmer",
+      "email": "laura@eventql.io"
+    },
+    {
+      "name": "Paul Asmuth",
+      "email": "paul@asmuth.com"
+    } 
+  ],
+  "main": "lib/eventql.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eventql/eventql-nodejs.org"
+  },
+  "bugs": {
+    "url": "https://github.com/eventql/eventql-nodejs/issues"
+  },
+  "keywords": [
+    "eventql"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "preferGlobal": true,
+  "private": false,
+  "subdomain": "eventql",
+  "license": "MIT"
+}
